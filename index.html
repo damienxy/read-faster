@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Read faster</title>
+    <meta name="description" content="Customize everything and read things faster">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>   
+    <div id="main" class="light-mode">
+        <section id="settings">
+            <div id="repeat" class="icon big moz-repeat" title="Repeat from beginning" >&#x27F2;</div>
+            <div id="pause" class="icon medium" title="Play/Pause" >&#x2759;&#x2759;</div>
+            <div id="back" class="icon big moz-back" title="Back one sentence" >&#x293A;</div>
+            <div title="Change font size">
+              <span id="font-size-minus" class="icon small">&#x54;</span>
+              <span id="font-size-plus" class="icon big">&#x54;</span>
+            </div>
+            <div>
+              <span id="font-type-minus" class="icon medium" title="Change font type">&#x2190;</span>
+              <span id="font-type" class="indicator" title="Font type"></span>
+              <span id="font-type-plus" class="icon medium" title="Change font type">&#x2192;</span>
+            </div>
+            <div>
+              <span id="speed-minus" class="icon medium" title="Slower">&#x2212;</span>
+              <span id="speed" class="indicator" title="Words per minute"></span>
+              <span id="speed-plus" class="icon medium" title="Faster">&#x2b;</span>
+            </div>
+            <div id="dark-mode" class="icon big" title="Dark mode">&#x2600;</div>
+        </section>
+        <section id="output"></section>
+        <section id="input">
+          <textarea id="text-area" class="light-mode" placeholder="Paste some text here" onclick="this.select()">Paste some text here to start.</textarea>
+        </section>
+    </div>
+    <noscript>Activate JS for this to work</noscript>
+    <script src="index.js"></script>
+  </body>
+</html>
