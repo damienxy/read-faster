@@ -197,6 +197,7 @@
     const remove = darkMode ? 'light-mode' : 'dark-mode';
     const add = darkMode ? 'dark-mode' : 'light-mode';
     elements.forEach(elem => changeClass(elem, remove, add));
+    setStyle(textAreaElem, 'opacity', 1);
     localStorage.setItem('darkMode', darkMode);
   };
 
